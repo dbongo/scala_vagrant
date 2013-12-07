@@ -1,11 +1,5 @@
-class { 'apt': }
-
 node default {
+    include git
     include java
     include scala
-
-    apt::ppa { 'ppa:git-core/ppa': }
-    package { 'git':
-        ensure   => latest
-    }
 }
