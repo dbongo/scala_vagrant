@@ -1,15 +1,15 @@
-[submodule "vagrant/puppet/modules/scala"]
-	path = vagrant/puppet/modules/scala
+[submodule "puppet/modules/scala"]
+	path = puppet/modules/scala
 	url = https://github.com/garethr/garethr-scala.git
-[submodule "vagrant/puppet/modules/stdlib"]
-	path = vagrant/puppet/modules/stdlib
+[submodule "puppet/modules/stdlib"]
+	path = puppet/modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
-[submodule "vagrant/puppet/modules/wget"]
-	path = vagrant/puppet/modules/wget
+[submodule "puppet/modules/wget"]
+	path = puppet/modules/wget
 	url = https://github.com/maestrodev/puppet-wget.git
-[submodule "vagrant/puppet/modules/apt"]
-	path = vagrant/puppet/modules/apt
+[submodule "puppet/modules/apt"]
+	path = puppet/modules/apt
 	url = https://github.com/puppetlabs/puppetlabs-apt.git
-[submodule "vagrant/puppet/modules/java"]
-	path = vagrant/puppet/modules/java
+[submodule "puppet/modules/java"]
+	path = puppet/modules/java
 	url = https://github.com/puppetlabs/puppetlabs-java.git
