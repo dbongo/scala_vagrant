@@ -28,21 +28,20 @@ class sbt {
        verbose     => false
     }
 
-    package { 'sbt':
-        provider => dpkg,
-        ensure   => installed,
-        source   => '/opt/debs/sbt.deb',
-        require  => Wget::Fetch['sbt-deb-file',
-        before   => Exec['apt-get-fix']
+    package { 'gdebi-core':
+        ensure => latest
     }
 
-    exec { 'apt-get-fix':
-        command => "/usr/bin/apt-get -f -y install",
-        unless  => "/usr/bin/apt-get check"
+    exec { 'sbt-install':
+        command => '/usr/bin/gdebi -n /opt/debs/sbt.deb',
+        require => [
+            Wget::Fetch['sbt-deb-file'],
+            Package['gdebi-core']
+        ]
     }
 }
 
-# Class: spackage_repository_updatebt
+# Class: package_repository_update
 #
 # This module forces an apt-get update.
 #
