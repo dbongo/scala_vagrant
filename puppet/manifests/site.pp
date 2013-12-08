@@ -74,7 +74,14 @@ stage { 'preinstall_apt':
 node default {
     include git
 
-    class {'package_repository_update': stage => preinstall_apt_update}
-    class {'java': stage => preinstall_apt}
-    class {'sbt': }
+    class {'package_repository_update':
+        stage => preinstall_apt_update
+    }
+
+    class {'java':
+        stage => preinstall_apt
+    }
+
+    class {'sbt':
+    }
 }
