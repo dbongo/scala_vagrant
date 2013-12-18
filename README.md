@@ -4,7 +4,7 @@ This Vagrant build provides basic support for Scala and friends.
 Note that while an attempt is being made to keep this machine generically useful, there may be packages installed which are specific to my use cases.  Be sure to take a look at the Puppet manifest before using this in your own projects.
 
 # What's On This Box
-- SBT - 0.13.0
+- SBT - 0.13.1
 - Java - 1.7
 - Git - 1.7.9.5
 

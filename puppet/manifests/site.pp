@@ -14,7 +14,7 @@
 class sbt {
     include wget
 
-    $sbt_deb_source = 'http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.0/sbt.deb'
+    $sbt_deb_source = 'http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.1/sbt.deb'
 
     file { '/opt/debs':
         ensure => directory,
